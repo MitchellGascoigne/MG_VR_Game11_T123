@@ -6,6 +6,11 @@ TagManager:
   tags:
   - Left Hand
   - Right Hand
+  - RoomLight
+  - SamplesInfoPanel
+  - ScoreObject
+  - scoreText
+  - winMessageText
   layers:
   - Default
   - TransparentFX
