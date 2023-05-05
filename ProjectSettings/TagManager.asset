@@ -11,6 +11,7 @@ TagManager:
   - ScoreObject
   - scoreText
   - winMessageText
+  - ResetBox
   layers:
   - Default
   - TransparentFX

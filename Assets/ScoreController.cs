@@ -1,5 +1,6 @@
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class ScoreController : MonoBehaviour
 {
@@ -13,11 +14,16 @@ public class ScoreController : MonoBehaviour
     {
         if (other.CompareTag("ScoreObject"))
         {
+            if(gameObject.CompareTag("ResetBox"))
+            {
+                SceneManager.LoadScene(0);
+            }
             // Add score when object collides with the collider
             score += scoreChangeValue;
             // Update the UI with the new score value
             scoreText.text = "Score: " + score.ToString();
         }
+
     }
 
     private void OnTriggerExit(Collider other)
